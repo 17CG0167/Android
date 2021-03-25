@@ -2,17 +2,281 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/degradado"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp                 "
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/lupa"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nombre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/title"
+        android:textColor="@color/colorBlanco"
+        android:textSize="@dimen/titulos"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle"
+        android:textColor="@color/colorBlanco"
+        android:textSize="@dimen/subtitulos"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="93dp">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            app:srcCompat="@drawable/dot" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/barTitle"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlanco" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/barTitle2"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlanco" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/barTitle3"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlanco" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/select" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-30dp"
+        tools:layout_editor_absoluteY="143dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/burger" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burger"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="@dimen/titulos" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="only one"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="@dimen/subtitulos" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingStart="20dp"
+                    android:text="8.00$"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="@dimen/subtitulos" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redondo"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAlignment="gravity"
+                    app:srcCompat="@drawable/add" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/burger" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Double Burger"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="@dimen/titulos" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="that's two"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="@dimen/subtitulos" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingStart="20dp"
+                    android:text="10.50$"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="@dimen/subtitulos" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redondo"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/add" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="674dp">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bag" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mail" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/like" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

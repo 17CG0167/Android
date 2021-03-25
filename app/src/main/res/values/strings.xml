@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">Hola Mundo - Hector Reyes</string>
-    <string name="nombre">Hector Reyes HI</string>
+
+    <string name="title">Every Bite a</string>
+    <string name="subtitle">Better Burger!</string>
+    <string name="barTitle">Burger</string>
+    <string name="barTitle2">Pasta</string>
+    <string name="barTitle3">Salads</string>
+
 </resources>
